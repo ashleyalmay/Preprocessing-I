@@ -1,1 +1,238 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sen Regular'), local('Sen-Regular'), url(https://fonts.gstatic.com/s/sen/v1/6xKjdSxYI9_3nPWI.ttf) format('truetype');
+}
+/*
+LESS - Syntax 
+Compiler - NODE
+Output - CSS
+*/
+/* variables */
+/*mixins*/
+h1,
+h2 {
+  font-size: 2rem;
+  font-family: 'Roboto Slab', serif;
+}
+img {
+  width: 30%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+header {
+  margin: 20px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+@media (max-width: 515px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header nav {
+  margin-right: 5%;
+  display: flex;
+}
+@media (max-width: 515px) {
+  header nav {
+    margin-left: 0;
+  }
+}
+header nav a {
+  margin-left: 20px;
+  font-size: 1.2rem;
+  color: gray;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: #d6d6d6;
+}
+header nav .first-anchor {
+  margin-left: 0;
+}
+.box1 {
+  background-color: #d6d6d6;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+.box1 h1 {
+  font-family: 'Roboto Slab', serif;
+}
+.box1 h3 {
+  font-size: 1.4rem;
+  padding-bottom: 5%;
+}
+.box1 .button-parent {
+  padding-top: 5%;
+}
+.box1 .button-parent .letsbtn {
+  display: block;
+  background-color: gray;
+  cursor: pointer;
+  width: 100px;
+  height: 45px;
+  color: white;
+}
+.box2 {
+  background-color: #d6d6d6;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  display: flex;
+}
+.box2 .listenup {
+  flex-direction: column;
+  width: 50%;
+}

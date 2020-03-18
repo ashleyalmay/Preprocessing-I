@@ -54,6 +54,120 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	
 }
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Sen&display=swap');
+/*
+LESS - Syntax 
+Compiler - NODE
+Output - CSS
+*/
+/* variables */
+@main-color: rgb(214, 214, 214);
+@accent-color:gray; 
+@main-color2:gray;
+@main-font: 'Sen', sans-serif;
+@heading-font: 'Roboto Slab', serif;
+/*mixins*/
 
+
+h1,h2 {
+	font-size: 2rem;
+	font-family: @heading-font;
+  }
+
+img{
+	width: 30%;
+	padding-top: 5%;
+	padding-bottom: 3%;
+}
+header {
+	//background-color: @main-color;
+	margin: 20px 0;
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	
+	@media( max-width: 515px ) {
+	  flex-direction: column;
+	  align-items: center;
+	}// this closes the header media query 
+	
+	nav {
+	  margin-right: 5%;
+	  display: flex;
+	  
+  
+	  @media( max-width: 515px ) {
+		margin-left: 0;
+	  }// this closes the media query for the nav
+  
+	  a {
+		
+		margin-left: 20px;
+		font-size: 1.2rem;
+		color:@accent-color;
+		text-decoration: none;
+		&:hover{
+		  color:@main-color;
+		}// closes hover
+	  }// this closes the a tag
+	  
+	  .first-anchor {
+		margin-left: 0;
+	  }// this closes the first-achor
+	}// this closes the nav
+  }// this closes the header
+
+  .box1{
+		background-color: @main-color;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-left: 5%;
+		padding-bottom: 5%;
+	h1{
+	font-family: @heading-font;
+
+	}// closes the h1 tag
+	h3{
+		font-size: 1.4rem;
+		padding-bottom: 5%;
+	}
+
+	.button-parent{
+		padding-top: 5%;
+		
+		.letsbtn {
+			display: block;
+			background-color: @main-color2;
+			cursor: pointer;
+			width: 100px;
+			height: 45px;
+			//border-radius: 1px;
+			color: white;
+
+			}// this closes the letsbtn
+	}// this closes the .button-parent
+
+  }// this closes the box1 tag
+
+.box2{
+	background-color: @main-color;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 5%;
+
+		display: flex;
+
+		.listenup{
+		flex-direction: column;	
+		width: 50%;
+		}
+		.stuffimgoodat{
+		
+		}
+
+}// this closes the box2 tag
