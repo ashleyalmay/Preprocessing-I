@@ -135,7 +135,10 @@ header {
 		font-size: 1.4rem;
 		padding-bottom: 5%;
 	}
-
+	
+	p{
+		width: 90%;
+	}
 	.button-parent{
 		padding-top: 5%;
 		
@@ -154,20 +157,54 @@ header {
   }// this closes the box1 tag
 
 .box2{
-	background-color: @main-color;
+	//background-color: @main-color;
+	margin-top: 5%;
 	margin-left: 5%;
 	margin-right: 5%;
-	padding-left: 5%;
+	//padding-left: 5%;
 	padding-bottom: 5%;
-
-		display: flex;
+	display: flex;
 
 		.listenup{
 		flex-direction: column;	
 		width: 50%;
-		}
+		p{
+			margin-right: 10%;
+			padding-top: 5%;
+		}// this closes p tag
+		}// this closes the listenup tag
 		.stuffimgoodat{
-		
-		}
+			width: 50%;
+		ul{
+			//padding-top: 1%;
+			
+
+			li{
+				padding-top:5%;	
+			}// this closes the li tag
+		}// this closes the ul tag
+		}// this closes the stuff tag
 
 }// this closes the box2 tag
+
+.box3{
+	
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-bottom: 5%;
+	background-color: @main-color;
+
+	h2{
+		margin-bottom: 1%;
+	}// this closes the h2 tag
+
+}// this closes the box3 tag
+
+footer{
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	padding-bottom: 1%;
+	margin-top: 5%;
+
+}

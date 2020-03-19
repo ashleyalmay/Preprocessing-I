@@ -213,6 +213,9 @@ header nav .first-anchor {
   font-size: 1.4rem;
   padding-bottom: 5%;
 }
+.box1 p {
+  width: 90%;
+}
 .box1 .button-parent {
   padding-top: 5%;
 }
@@ -225,14 +228,39 @@ header nav .first-anchor {
   color: white;
 }
 .box2 {
-  background-color: #d6d6d6;
+  margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
-  padding-left: 5%;
   padding-bottom: 5%;
   display: flex;
 }
 .box2 .listenup {
   flex-direction: column;
   width: 50%;
+}
+.box2 .listenup p {
+  margin-right: 10%;
+  padding-top: 5%;
+}
+.box2 .stuffimgoodat {
+  width: 50%;
+}
+.box2 .stuffimgoodat ul li {
+  padding-top: 5%;
+}
+.box3 {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 5%;
+  background-color: #d6d6d6;
+}
+.box3 h2 {
+  margin-bottom: 1%;
+}
+footer {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  padding-bottom: 1%;
+  margin-top: 5%;
 }
