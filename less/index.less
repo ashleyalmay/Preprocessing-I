@@ -65,13 +65,16 @@ Output - CSS
 */
 /* variables */
 @main-color: rgb(214, 214, 214);
-@accent-color:gray; 
+@accent-color:rgb(0, 0, 0); 
 @main-color2:gray;
 @main-font: 'Sen', sans-serif;
 @heading-font: 'Roboto Slab', serif;
 /*mixins*/
-
-
+// this is not working 
+.bordered(){
+	border:2px solid, @accent-colour;
+	padding:2%;
+  }
 h1,h2 {
 	font-size: 2rem;
 	font-family: @heading-font;
@@ -81,16 +84,21 @@ img{
 	width: 30%;
 	padding-top: 5%;
 	padding-bottom: 3%;
+	// this is not working???
+	@media( max-width: 500px ) {
+	width: 100%;
+	align-items: center;
+	}
 }
 header {
-	//background-color: @main-color;
+	
 	margin: 20px 0;
 	padding: 20px 0;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row-reverse;
 	
-	@media( max-width: 515px ) {
+	@media( max-width: 500px ) {
 	  flex-direction: column;
 	  align-items: center;
 	}// this closes the header media query 
@@ -98,8 +106,7 @@ header {
 	nav {
 	  margin-right: 5%;
 	  display: flex;
-	  
-  
+
 	  @media( max-width: 515px ) {
 		margin-left: 0;
 	  }// this closes the media query for the nav
@@ -157,13 +164,13 @@ header {
   }// this closes the box1 tag
 
 .box2{
-	//background-color: @main-color;
+	
 	margin-top: 5%;
 	margin-left: 5%;
 	margin-right: 5%;
-	//padding-left: 5%;
 	padding-bottom: 5%;
 	display: flex;
+	.bordered();
 
 		.listenup{
 		flex-direction: column;	
@@ -177,8 +184,7 @@ header {
 			width: 50%;
 		ul{
 			//padding-top: 1%;
-			
-
+	
 			li{
 				padding-top:5%;	
 			}// this closes the li tag
